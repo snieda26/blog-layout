@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 import styles from "./input.module.scss";
+import { Label } from "ui/Label";
 
 interface IInput {
   label: string;
@@ -17,7 +18,7 @@ export const Input: FC<IInput> = ({
 }) => {
   return (
     <div>
-      <label className={styles.label}>{label}</label>
+      <Label>{label}</Label>
       <input
         type={type}
         name=""
