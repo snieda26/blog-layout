@@ -1,10 +1,4 @@
-import {
-  Article,
-  Dashboard,
-  Moon,
-  Notification,
-  Settings,
-} from "@components/Icons";
+import { Article, Dashboard, Notification, Settings } from "@components/Icons";
 import { v4 as uuid } from "uuid";
 
 interface IMenuData {
@@ -13,7 +7,6 @@ interface IMenuData {
   title: string;
   slug?: string;
   messagesCount?: number;
-  class?: string;
 }
 
 export const MenuData: IMenuData[] = [
@@ -42,11 +35,5 @@ export const MenuData: IMenuData[] = [
     icon: Settings,
     title: "Налаштування",
     slug: "/settings",
-  },
-  {
-    id: uuid(),
-    icon: Moon,
-    title: "Темна тема",
-    class: "moon",
   },
 ];

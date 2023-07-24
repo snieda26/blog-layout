@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { MenuData } from "@mock/menuData";
 
 import styles from "./menu.module.scss";
+import { ToggleTheme } from "@components/ToggleTheme";
 
 export const Menu = () => {
   return (
@@ -28,12 +29,9 @@ export const Menu = () => {
               )}
             </NavLink>
           ) : (
-            item.class && (
-              <div className={styles[item.class]} key={item.id}>
-                <IconToRender />
-                <span>{item.title}</span>
-              </div>
-            )
+            <div className={styles.theme}>
+              <ToggleTheme />
+            </div>
           );
         })}
         <span className={styles.separator} />
