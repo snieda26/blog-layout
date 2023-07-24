@@ -4,7 +4,7 @@ import { ProfileInfo } from "@components/ProfileInfo";
 import { Avatar, Logo, Plus } from "@components/Icons";
 
 import styles from "./sidebar.module.scss";
-import { ToggleTheme } from "@components/ToggleTheme";
+import { ToggleTheme } from "ui/ToggleTheme";
 import { Link } from "react-router-dom";
 import { Button } from "ui/Button";
 
