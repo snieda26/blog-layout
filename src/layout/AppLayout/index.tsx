@@ -6,9 +6,11 @@ import styles from "./appLayout.module.scss";
 
 export const AppLayout = () => {
   return (
-    <main className={styles.container}>
-      <Sidebar />
-      <Outlet />
+    <main className={styles.wrapper}>
+      <div className={styles.container}>
+        <Sidebar />
+        <Outlet />
+      </div>
     </main>
   );
 };
