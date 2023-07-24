@@ -1,0 +1,25 @@
+.sidebar {
+  background-color: #fff;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 17px 0;
+  max-height: 798px;
+  min-width: 278px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  padding: 0 17px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 17px;
+}
