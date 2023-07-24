@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { MenuData } from "@mock/menuData";
 
 import styles from "./menu.module.scss";
-import { ToggleTheme } from "@components/ToggleTheme";
+import { ToggleTheme } from "ui/ToggleTheme";
 
 export const Menu = () => {
   return (
