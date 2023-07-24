@@ -1,0 +1,41 @@
+.edit {
+  display: flex;
+  justify-content: center;
+
+  &_avatar {
+    position: relative;
+    svg {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .brush {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    background-color: #1256d7;
+    border-radius: 60px;
+    padding: 10px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
