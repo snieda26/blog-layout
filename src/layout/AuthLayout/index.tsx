@@ -25,7 +25,7 @@ export const AuthLayout: FC<IAuthLayout> = ({ children }) => {
         <Logo />
         <div className={styles.content}>
           <span className={styles.title}>
-            {pathname === "sign-in" ? "Вхід" : "Реєстрація"}
+            {pathname === "/sign-in" ? "Вхід" : "Реєстрація"}
           </span>
           <span className={styles.description}>
             Ласкаво просимо.{" "}
