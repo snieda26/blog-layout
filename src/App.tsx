@@ -3,7 +3,9 @@ import { Settings } from "@pages/Settings";
 import { Route, Routes } from "react-router-dom";
 import { NewArticle } from "@pages/New-Article";
 import { Messages } from "@pages/Messages";
-import { ErrorPage } from "@pages/ErroPage";
+import { ErrorPage } from "@pages/ErrorPage";
+import { SignUp } from "@pages/SignUp";
+import { SignIn } from "@pages/SignIn";
 
 export const App = () => {
   return (
@@ -15,8 +17,8 @@ export const App = () => {
         <Route path="/new-article" element={<NewArticle />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/settings" element={<Settings />} />
-        <Route path="/sign-in" element={"Sign In"} />
-        <Route path="/sign-up" element={"Sign Up"} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
