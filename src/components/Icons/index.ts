@@ -8,7 +8,7 @@ import { ReactComponent as Comment } from "@assets/comment.svg";
 import { ReactComponent as Dashboard } from "@assets/dashboard.svg";
 import { ReactComponent as DropDown } from "@assets/drop-down.svg";
 import { ReactComponent as Error } from "@assets/error.svg";
-import { ReactComponent as Facebook } from "@assets/add.svg";
+import { ReactComponent as Facebook } from "@assets/facebook.svg";
 import { ReactComponent as Google } from "@assets/google.svg";
 import { ReactComponent as Heart } from "@assets/heart.svg";
 import { ReactComponent as Like } from "@assets/like.svg";
