@@ -1,5 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap");
 
+:root {
+  --background-color: #fafafa;
+  --primary-color: #fff;
+  --secondary-color: #1256d7;
+
+  // Button
+  --button-hover-color: #e8edff;
+
+  --logout-button-color: #f6f6f6;
+  --logout-hover-color: #a3b7ff;
+
+  --notification-background-color: #130039;
+  --notification-text-color: #fff;
+
+  --menu-active-background-color: #f1f4ff;
+  --menu-hover-color: #fafbff;
+
+  // Text
+  --text-color: #000;
+  --label-color: #191d23;
+  --primary-text-color: #1256d7;
+  --secondary-text-color: #717171;
+
+  // Input
+  --input-border: #71717180;
+
+  --box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+  --background-color: #161616;
+  --primary-color: #262626;
+  --secondary-color: #9385d0;
+
+  // Button
+  --button-hover-color: #494853;
+
+  --logout-button-color: #f6f6f64d;
+  --logout-hover-color: #6b6684;
+
+  --notification-background-color: #e8e8e8;
+  --notification-text-color: #000;
+
+  --menu-active-background-color: #3b3d41;
+  --menu-hover-color: #494853;
+
+  // Text
+  --text-color: #fff;
+  --label-color: #b6b6b6;
+  --secondary-text-color: #b6b6b6;
+
+  // Input
+  --input-border: #b6b6b680;
+}
+
 * {
   margin: 0;
   padding: 0;

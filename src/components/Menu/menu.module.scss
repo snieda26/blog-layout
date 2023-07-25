@@ -26,7 +26,7 @@
   transition: ease all 0.4s;
 
   &:hover {
-    background-color: #fafbff;
+    background-color: var(--menu-hover-color);
     border-radius: 0 10px 10px 0;
   }
 }
@@ -35,8 +35,8 @@
 .theme {
   display: flex;
   align-items: center;
-  stroke: #717171;
-  color: #717171;
+  stroke: var(--secondary-text-color);
+  color: var(--secondary-text-color);
   gap: 10px;
   padding: 10px 20px 10px 50px;
 }
@@ -48,20 +48,20 @@
 }
 
 .active {
-  background-color: #f1f4ff;
+  background-color: var(--menu-active-background-color);
   border-radius: 0 10px 10px 0;
   .linkIcon {
-    color: #1256d7;
-    stroke: #1256d7;
+    color: var(--secondary-color);
+    stroke: var(--secondary-color);
   }
 }
 
 .messages {
-  color: #fff;
+  color: var(--notification-text-color);
   font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
-  background-color: #130039;
+  background-color: var(--notification-background-color);
   padding: 5px 10px;
   margin-right: 5px;
 }

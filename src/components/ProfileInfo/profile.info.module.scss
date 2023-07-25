@@ -26,6 +26,7 @@
 .username {
   font-size: 16px;
   font-weight: 500;
+  color: var(--text-color);
 }
 
 .email {
@@ -37,15 +38,16 @@
 .logout {
   border: none;
   border-radius: 10px;
-  background-color: #f6f6f6;
+  background-color: vaR(--logout-button-color);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  stroke: #000;
+  stroke: var(--text-color);
   padding: 7px;
   transition: ease all 0.4s;
   cursor: pointer;
+  color: var(--text-color);
 
   span {
     font-size: 16px;
@@ -53,6 +55,6 @@
   }
 
   &:hover {
-    background-color: #a3b7ff;
+    background-color: var(--logout-hover-color);
   }
 }

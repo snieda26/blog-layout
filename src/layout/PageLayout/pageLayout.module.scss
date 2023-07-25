@@ -1,7 +1,7 @@
 .layout {
-  background: #fff;
+  background: var(--primary-color);
   border-radius: 20px;
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   width: 100%;
   padding-top: 19px;
 }
@@ -14,7 +14,7 @@
 }
 
 .heading {
-  color: #1256d7;
+  color: var(--secondary-color);
   font-size: 32px;
   font-weight: 600;
   display: flex;
@@ -27,7 +27,7 @@
     margin-right: 12px;
     width: 5px;
     height: 40px;
-    background-color: #1256d7;
+    background-color: var(--secondary-color);
     border-radius: 0 15px 15px 0;
   }
 }
