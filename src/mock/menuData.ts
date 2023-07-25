@@ -27,7 +27,7 @@ export const MenuData: IMenuData[] = [
     id: uuid(),
     icon: Notification,
     title: "Повідомлення",
-    slug: "/notifications",
+    slug: "/messages",
     messagesCount: 5,
   },
   {
