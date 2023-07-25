@@ -4,7 +4,7 @@ import { Sidebar } from "@components/Sidebar";
 
 import styles from "./appLayout.module.scss";
 import { useContext } from "react";
-import { ThemeContext } from "providers/ThemeProvider";
+import { ThemeContext } from "@providers/ThemeProvider";
 
 export const AppLayout = () => {
   const { currentTheme } = useContext(ThemeContext);

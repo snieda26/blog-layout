@@ -28,7 +28,8 @@
       "@assets/*": ["./assets/*"],
       "@layout/*": ["./layout"],
       "@mock/*": ["./mock/*"],
-      "@providers/*": ["./providers"]
+      "@providers/*": ["./providers/*"],
+      "@utils/*": ["./utils/*"]
     }
   },
   "include": ["src"],

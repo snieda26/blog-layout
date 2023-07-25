@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import styles from "./toggleInput.module.scss";
-import { ThemeContext } from "providers/ThemeProvider";
+import { ThemeContext } from "@providers/ThemeProvider";
 
 export const ToggleInput = () => {
   const { toggleTheme } = useContext(ThemeContext);
