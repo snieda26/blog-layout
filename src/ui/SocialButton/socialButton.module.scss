@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 38px;
+  border: 1px solid var(--input-border);
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+}
