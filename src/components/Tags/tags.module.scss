@@ -1,0 +1,15 @@
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tag {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--label-color);
+}
+
+.hashtag {
+  color: #9385d0;
+}
