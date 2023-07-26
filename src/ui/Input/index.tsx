@@ -8,6 +8,7 @@ interface IInput {
   type: "email" | "text" | "password";
   value?: string;
   placeholder?: string;
+  width: string;
 }
 
 export const Input: FC<IInput> = ({
@@ -15,9 +16,10 @@ export const Input: FC<IInput> = ({
   type,
   value = "",
   placeholder = "Empty value",
+  width,
 }) => {
   return (
-    <div>
+    <div className={styles.container} style={{ width: `${width}` }}>
       <Label>{label}</Label>
       <input
         type={type}

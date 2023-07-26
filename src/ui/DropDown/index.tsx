@@ -6,11 +6,12 @@ import { Label } from "ui/Label";
 interface IDropDown {
   label: string;
   data: ISelectOptions[];
+  width: string;
 }
 
-export const DropDown: FC<IDropDown> = ({ label, data }) => {
+export const DropDown: FC<IDropDown> = ({ label, data, width }) => {
   return (
-    <div>
+    <div className={styles.dropdown} style={{ width: `${width}` }}>
       <Label>{label}</Label>
       <select className={styles.select}>
         {data.map(item => (

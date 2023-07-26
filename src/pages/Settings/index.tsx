@@ -14,7 +14,7 @@ export const Settings = () => {
   };
 
   return (
-    <PageLayout title="Налаштування">
+    <PageLayout title="Налаштування" search={false}>
       <div className={styles.edit}>
         <div className={styles.edit_avatar}>
           <Avatar />
@@ -25,12 +25,22 @@ export const Settings = () => {
       </div>
       <form className={styles.form} onSubmit={handleSubmitForm}>
         <div className={styles.inputs}>
-          <Input type="text" label="Імʼя" value="Jenny" />
-          <Input type="text" label="Прізвище" value="Wilson" />
-          <Input type="text" label="Імʼя користувача" value="jen.wilson" />
-          <Input type="text" label="Email" value="jen.wilson@gmail.com" />
-          <DropDown label="Валюта" data={CurrencyOptions} />
-          <DropDown label="Країна" data={CountryOptions} />
+          <Input type="text" label="Імʼя" value="Jenny" width="420px" />
+          <Input type="text" label="Прізвище" value="Wilson" width="420px" />
+          <Input
+            type="text"
+            label="Імʼя користувача"
+            value="jen.wilson"
+            width="420px"
+          />
+          <Input
+            type="text"
+            label="Email"
+            value="jen.wilson@gmail.com"
+            width="420px"
+          />
+          <DropDown label="Валюта" data={CurrencyOptions} width="420px" />
+          <DropDown label="Країна" data={CountryOptions} width="420px" />
         </div>
         <Button borderRadius={4}>Зберегти</Button>
       </form>
