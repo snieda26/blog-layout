@@ -7,12 +7,13 @@ import { ErrorPage } from "@pages/ErrorPage";
 import { SignUp } from "@pages/SignUp";
 import { SignIn } from "@pages/SignIn";
 import { Articles } from "@pages/Articles";
+import { Dashboard } from "@pages/Dashboard";
 
 export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
-        <Route path="/" element={"Dashboard"} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:id" element={"Article Id"} />
         <Route path="/new-article" element={<NewArticle />} />
