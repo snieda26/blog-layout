@@ -46,3 +46,26 @@ export const CountryOptions: ISelectOptions[] = [
     option: "Польща",
   },
 ];
+
+export const RegionOptions: ISelectOptions[] = [
+  {
+    id: uuid(),
+    value: "ternopil",
+    option: "Тернопільська",
+  },
+  {
+    id: uuid(),
+    value: "kyiv",
+    option: "Київська",
+  },
+  {
+    id: uuid(),
+    value: "poltava",
+    option: "Полтавська",
+  },
+  {
+    id: uuid(),
+    value: "lviv",
+    option: "Львівська",
+  },
+];
