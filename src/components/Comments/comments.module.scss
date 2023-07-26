@@ -1,0 +1,21 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.reply {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-left: 42px;
+}
+
+.allComments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--secondary-color);
+  stroke: var(--secondary-color);
+  fill: var(--secondary-color) !important;
+}
