@@ -6,6 +6,7 @@
   max-width: 280px;
   align-items: center;
   border-radius: 15px;
+  border: 0.3px solid var(--input-border);
 }
 
 .image {
@@ -17,22 +18,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.tags {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.tag {
-  font-size: 10px;
-  font-weight: 500;
-  color: var(--label-color);
-}
-
-.hashtag {
-  color: #9385d0;
 }
 
 .title {
