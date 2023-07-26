@@ -1,0 +1,56 @@
+.container {
+  padding: 20px 0 20px;
+  margin-left: 15px;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 24px;
+}
+
+.image {
+  border-radius: 20px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.description {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.articles {
+  display: flex;
+  padding: 0 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.comments {
+  padding: 0 30px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

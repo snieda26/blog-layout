@@ -8,6 +8,7 @@ import { SignUp } from "@pages/SignUp";
 import { SignIn } from "@pages/SignIn";
 import { Articles } from "@pages/Articles";
 import { Dashboard } from "@pages/Dashboard";
+import { Article } from "@pages/Article";
 
 export const App = () => {
   return (
@@ -15,7 +16,7 @@ export const App = () => {
       <Route path="/" element={<AppLayout />}>
         <Route path="/" element={<Dashboard />} />
         <Route path="/articles" element={<Articles />} />
-        <Route path="/articles/:id" element={"Article Id"} />
+        <Route path="/articles/:id" element={<Article />} />
         <Route path="/new-article" element={<NewArticle />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/settings" element={<Settings />} />
