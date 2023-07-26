@@ -1,0 +1,23 @@
+.like {
+  padding: 8px 22px;
+  border-radius: 4px;
+  background-color: var(--menu-active-background-color);
+  stroke: var(--secondary-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: ease all 0.4s;
+  fill: var(--menu-active-background-color);
+
+  &:hover {
+    background-color: var(--logout-hover-color);
+    fill: var(--logout-hover-color);
+  }
+}
+
+.pressed {
+  background-color: var(--secondary-color);
+  fill: #fff !important;
+  stroke: #fff;
+}
