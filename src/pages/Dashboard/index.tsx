@@ -4,21 +4,23 @@ import { Separator } from "ui/Separator";
 import styles from "./dashboard.module.scss";
 import { Card } from "@components/Card";
 
-import cardImage from "@assets/cardImage.png";
+import { ArticlesData } from "@mock/articles";
 
 export const Dashboard = () => {
   return (
     <DashboardLayout title="Дошка" placeholder="Пошук">
       <Separator />
       <div className={styles.cards}>
-        {new Array(3).fill(
+        {ArticlesData.map(item => (
           <Card
-            image={cardImage}
-            title="Info Product Design"
-            tags={["UI Design", "Web Design", "Design"]}
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, elit nibh et nisl, pellentesque scelerisque faucibus facilisis at. Placerat morbi sem viverra diam lectus odio orci... "
+            key={item.id}
+            id={item.id}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+            tags={item.tags}
           />
-        )}
+        ))}
       </div>
     </DashboardLayout>
   );
