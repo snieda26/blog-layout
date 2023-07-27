@@ -1,12 +1,13 @@
 import { PageLayout } from "layout/PageLayout";
 
 import styles from "./settings.module.scss";
-import { Avatar, Brush } from "@components/Icons";
+import { Brush } from "@components/Icons";
 import { Button } from "ui/Button";
 import { Input } from "ui/Input";
 import { DropDown } from "ui/DropDown";
 import { CountryOptions, CurrencyOptions } from "@mock/dropDown";
 import { FormEvent } from "react";
+import avatar from "@assets/avatar.svg";
 
 export const Settings = () => {
   const handleSubmitForm = (e: FormEvent<HTMLFormElement>) => {
@@ -17,7 +18,7 @@ export const Settings = () => {
     <PageLayout title="Налаштування" search={false}>
       <div className={styles.edit}>
         <div className={styles.edit_avatar}>
-          <Avatar />
+          <img src={avatar} alt="Avatar Image" />
           <div className={styles.brush}>
             <Brush />
           </div>
