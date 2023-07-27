@@ -58,3 +58,12 @@
     background-color: var(--logout-hover-color);
   }
 }
+
+@media screen and (max-width: 930px) {
+  .profileInfo {
+    margin-bottom: 0px;
+  }
+  .logout {
+    margin-bottom: 10px;
+  }
+}

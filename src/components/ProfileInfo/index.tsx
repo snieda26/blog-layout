@@ -4,18 +4,18 @@ import styles from "./profile.info.module.scss";
 import { Logout } from "@components/Icons";
 
 interface IProfileInfo {
-  Avatar: string;
+  avatar: string;
   username: string;
   email: string;
 }
 
-export const ProfileInfo: FC<IProfileInfo> = ({ Avatar, username, email }) => {
+export const ProfileInfo: FC<IProfileInfo> = ({ avatar, username, email }) => {
   return (
     <div className={styles.profileInfo}>
       <span className={styles.title}>Профіль</span>
       <div className={styles.profile}>
         <div>
-          <Avatar />
+          <img src={avatar} alt="" />
         </div>
         <div className={styles.profileName}>
           <span className={styles.username}>{username}</span>
