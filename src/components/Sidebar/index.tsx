@@ -1,7 +1,9 @@
 import { Menu } from "@components/Menu";
 import { ProfileInfo } from "@components/ProfileInfo";
 
-import { Avatar, Logo, Plus } from "@components/Icons";
+import { Plus } from "@components/Icons";
+import logo from "@assets/logo.svg";
+import avatar from "@assets/avatar.svg";
 
 import styles from "./sidebar.module.scss";
 import { ToggleTheme } from "ui/ToggleTheme";
@@ -13,7 +15,7 @@ export const Sidebar = () => {
     <aside className={styles.sidebar}>
       <div className={styles.logo}>
         <Link to="/">
-          <Logo />
+          <img src={logo} alt="" />
         </Link>
         <Link to="new-article">
           <Button borderRadius={10}>
@@ -25,7 +27,7 @@ export const Sidebar = () => {
       <Menu />
       <ProfileInfo
         email="jen.wilson@gmail.com"
-        Avatar={Avatar}
+        avatar={avatar}
         username="Jenny Wilson"
       />
       <div className={styles.theme}>

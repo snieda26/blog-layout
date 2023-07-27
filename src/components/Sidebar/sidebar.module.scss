@@ -23,3 +23,9 @@
   align-items: center;
   padding: 0px 17px;
 }
+
+@media screen and (max-width: 930px) {
+  .sidebar {
+    display: none;
+  }
+}
