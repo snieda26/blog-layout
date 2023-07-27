@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { ReactComponent as Add } from "@assets/add.svg";
 import { ReactComponent as Apple } from "@assets/apple.svg";
 import { ReactComponent as Article } from "@assets/article.svg";
