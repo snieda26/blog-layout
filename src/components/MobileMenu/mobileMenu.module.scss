@@ -1,0 +1,27 @@
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  background-color: var(--background-color);
+  display: none;
+  z-index: 5;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 930px) {
+  .mobileMenu {
+    display: block;
+  }
+}
