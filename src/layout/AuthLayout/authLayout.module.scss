@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
+  padding: 17px;
 }
 
 .auth {
@@ -72,12 +73,15 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 5px;
 
   a {
@@ -87,5 +91,18 @@
 
   span {
     color: var(--secondary-text-color);
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    background-color: transparent;
+    align-items: start;
+    svg {
+      display: none;
+    }
+  }
+  .auth {
+    margin-top: 40px;
   }
 }

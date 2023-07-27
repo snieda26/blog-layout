@@ -9,3 +9,12 @@
   flex-direction: column;
   gap: 24px;
 }
+
+@media screen and (max-width: 930px) {
+  .layout {
+    background-color: transparent;
+    margin-left: 0;
+    box-shadow: none;
+    margin-top: 40px;
+  }
+}
