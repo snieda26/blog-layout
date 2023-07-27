@@ -40,6 +40,7 @@
   padding: 0 20px;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .comments {
@@ -53,4 +54,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    background-color: transparent;
+    margin-left: 0;
+    box-shadow: none;
+    margin-top: 20px;
+  }
 }

@@ -11,6 +11,7 @@ import { Comments } from "@components/Comments";
 import { Input } from "ui/Input";
 import { Button } from "ui/Button";
 import { Send } from "@components/Icons";
+import { Articles } from "@components/Articles";
 
 export const Article = () => {
   const { id } = useParams();
@@ -35,17 +36,7 @@ export const Article = () => {
         <Heading hasInput={false} placeholder="">
           Рекомендуємо
         </Heading>
-        <div className={styles.articles}>
-          {ArticlesData.slice(0, 3).map(item => (
-            <Card
-              id={item.id}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-              tags={item.tags}
-            />
-          ))}
-        </div>
+        <Articles />
       </div>
       <div>
         <Heading hasInput={false} placeholder="">
