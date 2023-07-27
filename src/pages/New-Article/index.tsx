@@ -12,7 +12,7 @@ export const NewArticle = () => {
   };
 
   return (
-    <PageLayout title="Створення Статті">
+    <PageLayout title="Створення Статті" search={false}>
       <form className={styles.form} onSubmit={handleSubmitForm}>
         <UploadFile label="Завантажити фото" />
         <TextArea label="Текст статті" placeholder="Напишіть сюди ваш текст" />
