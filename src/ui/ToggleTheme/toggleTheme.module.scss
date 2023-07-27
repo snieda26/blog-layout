@@ -5,11 +5,11 @@
 }
 
 .title {
-  color: #717171;
+  color: var(--secondary-text-color);
   font-size: 16px;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 10px;
-  stroke: #717171;
+  stroke: var(--secondary-text-color);
 }

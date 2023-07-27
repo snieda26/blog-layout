@@ -29,3 +29,10 @@
     border-radius: 0 15px 15px 0;
   }
 }
+
+@media screen and (max-width: 485px) {
+  .heading {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+}
