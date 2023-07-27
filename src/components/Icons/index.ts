@@ -22,6 +22,7 @@ import { ReactComponent as Search } from "@assets/search.svg";
 import { ReactComponent as Send } from "@assets/send.svg";
 import { ReactComponent as Settings } from "@assets/settings.svg";
 import { ReactComponent as Upload } from "@assets/upload.svg";
+import { ReactComponent as Burger } from "@assets/burger.svg";
 
 export {
   Add,
@@ -48,4 +49,5 @@ export {
   Send,
   Settings,
   Upload,
+  Burger,
 };
