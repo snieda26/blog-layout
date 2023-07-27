@@ -5,7 +5,7 @@ interface IMenuData {
   id: string;
   icon: string;
   title: string;
-  slug?: string;
+  slug: string;
   messagesCount?: number;
 }
 
