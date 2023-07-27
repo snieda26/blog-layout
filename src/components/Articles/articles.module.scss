@@ -1,0 +1,18 @@
+.container {
+  padding: 0 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1230px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1211px) {
+  .container {
+    justify-content: center;
+  }
+}
