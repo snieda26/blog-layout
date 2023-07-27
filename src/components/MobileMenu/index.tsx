@@ -11,6 +11,7 @@ export const MobileMenu = () => {
 
   const handleChangeVisibility = () => {
     setIsVisible(!isVisible);
+    window.scroll(0, 0);
   };
   return (
     <div className={styles.mobileMenu}>
