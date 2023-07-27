@@ -31,8 +31,7 @@
   }
 }
 
-.linkIcon,
-.theme {
+.linkIcon {
   display: flex;
   align-items: center;
   stroke: var(--secondary-text-color);
@@ -42,9 +41,8 @@
 }
 
 .theme {
+  padding-left: 50px;
   display: none;
-  padding: 10px 0 10px 50px;
-  justify-content: space-between;
 }
 
 .active {
@@ -70,4 +68,11 @@
   height: 1px;
   background-color: #afaeb280;
   margin-left: 17px;
+}
+
+@media screen and (max-width: 930px) {
+  .theme {
+    display: flex;
+    justify-content: space-between;
+  }
 }
