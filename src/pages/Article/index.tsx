@@ -5,7 +5,6 @@ import { ArticlesData } from "@mock/articles";
 import { ErrorPage } from "@pages/ErrorPage";
 import { Tags } from "@components/Tags";
 import { Heading } from "ui/Heading";
-import { Card } from "@components/Card";
 import { Comments as CommentsMock } from "@mock/comments";
 import { Comments } from "@components/Comments";
 import { Input } from "ui/Input";
