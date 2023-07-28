@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 import styles from "./input.module.scss";
 import { Label } from "ui/Label";
@@ -18,16 +18,22 @@ export const Input: FC<IInput> = ({
   placeholder = "Empty value",
   width,
 }) => {
+  const [input, setInput] = useState(value);
   return (
     <div className={styles.container} style={{ width: `${width}` }}>
       <Label>{label}</Label>
-      <input
-        type={type}
-        name=""
-        value={value}
-        placeholder={placeholder}
-        className={styles.input}
-      />
+      <fieldset>
+        <input
+          type={type}
+          name=""
+          value={input}
+          placeholder={placeholder}
+          className={styles.input}
+          required
+          onChange={e => setInput(e.target.value)}
+        />
+        <label className={styles.error}>Error</label>
+      </fieldset>
     </div>
   );
 };

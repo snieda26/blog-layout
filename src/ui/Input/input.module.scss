@@ -1,13 +1,31 @@
-.input {
-  opacity: 1;
-  border: 1px solid #7171714d;
-  padding: 14px 10px;
-  width: 100%;
-  border-radius: 4px;
-  color: var(--text-color);
-  background-color: var(--primary-color);
-}
+fieldset {
+  border: none;
+  input {
+    opacity: 1;
+    border: 1px solid #7171714d;
+    padding: 14px 10px;
+    width: 100%;
+    border-radius: 4px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
 
-.input[type="password"] {
-  font-weight: 600;
+    &:focus {
+      outline: 1px auto -webkit-focus-ring-color;
+    }
+
+    &:invalid {
+      outline: 1px auto #d43131;
+    }
+  }
+  input[type="password"] {
+    font-weight: 600;
+  }
+  &:invalid > label:first-of-type {
+    display: block;
+    color: #d43131;
+    font-size: 15px;
+  }
+  label {
+    display: none;
+  }
 }
